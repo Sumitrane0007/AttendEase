@@ -84,7 +84,7 @@ def extract_attendance():
 def add_attendance(name):
     username = name.split('_')[0]
     userid = name.split('_')[1]
-
+# Ensure userid is valid and not empty
     # Ensure userid is valid and not empty
     if not userid.isdigit():
         print(f"Invalid userid: {userid}")
